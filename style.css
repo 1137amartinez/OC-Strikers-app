@@ -58,7 +58,7 @@ header {
 section {
   grid-column: 2 / 8;
   padding: 1rem;
-  background: rgba(100, 210, 230, 0.8); /* Light sky blue background with opacity */
+  background: rgba(135, 206, 235, 0.8); /* Light sky blue background with opacity */
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: var(--spacing);
@@ -112,4 +112,91 @@ button:hover {
 h2.phone-number {
   color: blue; /* Change phone number color to blue */
   font-size: 1.5rem; /* Increase font size for better visibility */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  main {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  header, section, .left, blockquote {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 992px) {
+  main {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  header, section, .left, blockquote {
+    grid-column: 1 / -1;
+  }
+
+  section {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  blockquote p {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  header, section, .left, blockquote {
+    grid-column: 1 / -1;
+  }
+
+  section {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+
+  blockquote p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  header, section, .left, blockquote {
+    grid-column: 1 / -1;
+  }
+
+  section {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+
+  blockquote p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header, section, .left, blockquote {
+    grid-column: 1 / -1;
+  }
+
+  section {
+    font-size: 0.625rem;
+    padding: 0.5rem;
+  }
+
+  blockquote p {
+    font-size: 1.5rem;
+  }
 }
