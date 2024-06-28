@@ -58,7 +58,7 @@ header {
 section {
   grid-column: 2 / 8;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.8); /* White background with opacity */
+  background: rgba(100, 210, 230, 0.8); /* Light sky blue background with opacity */
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: var(--spacing);
